@@ -1,0 +1,329 @@
+:root{
+    --first-color: #253237;
+    --second-color: #C2DFE3;
+    --third-color: #9DB4C0;
+    --fourth-color: black;
+    --fifth-color: whitesmoke;
+    --sixth-color: #9DB4C0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--second-color);
+}
+
+.top {
+    margin: 0;
+    height:80px;
+    background-color: var(--first-color);
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar {
+    margin-top:0;
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: var(--third-color);
+}
+
+#navtext {
+    font-family: Calibri;
+    word-spacing: 70px;
+    font-size: 30px;
+}
+
+h1 > a {
+    color: var(--fifth-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: var(--second-color);
+}
+
+#logo {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    margin-bottom: 450px;
+}
+
+.introduction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+}
+
+.introduction h1{
+    margin-left: 400px;
+    position: absolute;
+    font-size: 50px;
+    margin-bottom: 490px;
+}
+
+.introduction p{
+    font-size: 25px;
+    margin-left: 600px;
+    max-width: 50%;
+    position: absolute;
+    text-align: left;
+}
+
+p > a{
+    color:lightseagreen;
+    text-decoration: none;
+}
+
+ul{
+    display: inline-flex;
+    position: absolute;
+    list-style: none;
+    margin-left: 500px;
+    margin-top: 400px;
+    color: var(--fourth-color);
+    font-size: 20px;
+}
+
+ul > li{
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #9DB4C0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px var(--fourth-color);
+}
+
+.introduction h3{
+    position: absolute;
+    font-size: 50px;
+    margin-top: 2600px;
+    margin-bottom:30px;
+    color:var(--fourth-color);
+}
+
+.car{
+    height:504px;
+    width:378px;
+    position: absolute;
+    margin-top:0;
+    margin-right: 60%;
+    padding: 1px;
+    border: 2px solid var(--fourth-color);
+}
+
+.grid{
+    margin-top: 1000px;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.grid img, video{
+    border:2px solid var(--fourth-color);
+    height: 378px;
+    width: 504px;
+    margin-bottom: 50px;
+}
+
+.user {
+    margin-top: 1400px;
+    font-size: 30px;
+}
+
+#submit-button{
+    font-size: 25px;
+}
+#reset-button{
+    font-size: 25px;
+}
+#answer{
+    height:30px;
+    width: 300px;
+}
+
+#result-message{
+    margin-left: 150px !important;
+}
+
+/*Tablet Layout*/
+@media only screen and (max-width:1400px){
+    .changer{
+        display: none;
+    }
+    body{
+
+        background-color: #865DFF!important;
+
+    }
+
+    #logo{
+        height: 150px!important;
+        width: 150px!important;
+    }
+    .introduction {
+        display: flex!important;
+        position: relative!important;
+
+        height: 60vh!important;
+    }
+    #navtext a{
+        font-size: 1.5rem;
+    }
+
+
+    .top{
+        background-color: #3A1078!important;
+    }
+
+    #navbar {
+        background-color: #4E31AA!important;
+    }
+
+    .car{
+        margin-left: 64%;
+        height:50vh;
+        width:40vh;
+    }
+    .introduction h1{
+
+        font-size: 4rem;
+        max-width: 70%;
+        margin-top: 78%;
+        margin-right:27%;
+        width: 150%!important;
+    }
+    .introduction p{
+        font-size: 1.5rem;
+        max-width: 30%;
+        margin-top: 75%;
+        margin-right:53%;
+        width: 120%!important;
+    }
+    .user{
+        margin-top: 120%;
+        font-size: 1rem;
+    }
+    .user #submit-button{
+        font-size: 1rem;
+    }
+    .user #reset-button{
+        font-size: 1rem;
+    }
+    .user p{
+        margin-top: -0%!important;
+    }
+    ul{
+        display: table-row!important;
+        margin-top: 76%!important;
+        margin-right: 1%;
+    }
+    ul li{
+        font-size: 1rem;
+    }
+    .introduction h3{
+        margin-top: 170%;
+    }
+
+
+}
+
+
+
+
+
+
+/*Mobile layout*/
+@media only screen and (max-width:700px){
+    .changer{
+        display: none;
+    }
+    body{
+        background-color: #FA7070!important;
+
+    }
+    #navtext a{
+        font-size: 1rem;
+    }
+    #logo{
+
+        height: 100px!important;
+        width: 100px!important;
+    }
+    .top{
+        background-color: rgb(133, 0, 0)!important;
+    }
+
+    #navbar {
+        background-color: indianred !important;
+    }
+
+    .car{
+        margin-left: 64%;
+        height:30vh;
+        width:20vh;
+    }
+
+    .introduction h1{
+        font-size: 2.7rem;
+
+        margin-top: 10%;
+        margin-right:60%;
+
+    }
+    .introduction p{
+
+        font-size: 1.5rem;
+        max-width: 70%;
+        margin-top: 90%;
+        margin-right:73%;
+        width: 150%!important;
+    }
+
+    ul{
+        margin-top: 190%!important;
+        margin-right: 70%;
+    }
+    ul li{
+        font-size: 1rem;
+    }
+    .user{
+        margin-top: 300%;
+        font-size: 1rem;
+    }
+    .user #submit-button{
+       font-size: 1rem;
+    }
+    .user #reset-button{
+        font-size: 1rem;
+    }
+    .user p{
+        margin-top: -0%!important;
+    }
+
+    .introduction h3{
+        margin-top: 380%;
+        font-size: 2rem!important;
+    }
+    .grid{
+        margin-top: 155%;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1px;
+    }
+}
+
+

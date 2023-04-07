@@ -1,0 +1,316 @@
+:root{
+    --first-color: #253237;
+    --second-color: #C2DFE3;
+    --third-color: #9DB4C0;
+    --fourth-color: black;
+    --fifth-color: whitesmoke;
+    --sixth-color: #9DB4C0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--second-color);
+}
+
+.top {
+    margin: 0;
+    height:80px;
+    background-color: var(--first-color);
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar {
+    margin-top:0;
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+    padding-left: 0;
+    background-color:var(--third-color);
+}
+
+#navtext {
+    font-family: Calibri;
+    word-spacing: 70px;
+    font-size: 30px;
+}
+
+h1 > a {
+    color: var(--fifth-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--fourth-color);
+}
+
+a:active {
+    color: var(--second-color);
+}
+
+#logo {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    margin-bottom: 450px;
+}
+.changer{
+
+}
+
+.highschool {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+
+}
+
+.highschool h1 {
+    margin-left: 400px;
+    position: absolute;
+    font-size: 50px;
+    top: 250px;
+}
+
+h3 {
+    margin-left: 400px;
+    position: absolute;
+    font-size: 40px;
+    margin-bottom: 380px;
+}
+
+.west {
+    position: absolute;
+    margin-bottom:0;
+    margin-right: 60%;
+    padding: 1px;
+    border: 2px solid var(--fourth-color);
+    width: 600px;
+    height: 500px;
+}
+
+.tableHS{
+    background-color: var(--sixth-color);
+    margin-left: 400px;
+    border: 1px solid var(--fourth-color);
+}
+
+.tableHS td{
+    border:1px solid var(--fourth-color);
+    padding: 4px;
+}
+
+.university h1 {
+    position: absolute;
+    margin-top: 0;
+    font-size: 50px;
+    margin-left: 900px;
+}
+
+.university h3 {
+    margin-top: 70px;
+    font-size: 40px;
+    margin-left: 1100px;
+    position:absolute;
+}
+
+.university img {
+    padding: 2px;
+    border: 2px solid var(--fourth-color);
+    height: 500px;
+    width:600px;
+    position: absolute;
+    margin-left:70px;
+}
+
+.list2 {
+    list-style: none;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 800px;
+    padding-bottom: 200px;
+}
+
+.list2 ul li {
+    margin-bottom: 5px;
+    background-color: var(--sixth-color);
+    box-shadow: 1px 1px 5px var(--fourth-color);
+    position: relative;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+@media only screen and (max-width:1400px){
+    .changer{
+        display: none;
+    }
+    body{
+        background-color: #865DFF!important;
+
+    }
+
+    #logo{
+
+        height: 150px!important;
+        width: 150px!important;
+    }
+
+    #navtext a{
+        font-size: 1.5rem;
+    }
+
+    .top{
+        background-color: #3A1078!important;
+    }
+
+    #navbar {
+        background-color: #4E31AA!important;
+    }
+    .highschool h1{
+        font-size: 1.9rem;
+        margin-top: 10%;
+        min-width: 50%;
+        margin-right: 83%;
+    }
+    .highschool .west{
+        margin-left: 8%;
+        position: relative;
+        margin-top: 21%;
+    }
+    .highschool .tableHS{
+        position: absolute;
+        margin-top: 75%;
+
+        margin-right: 80%;
+    }
+    .university h1{
+        font-size: 1.9rem;
+        margin-top:-39%;
+        margin-left: 58%;
+    }
+    .university h3{
+        font-size: 1.4rem;
+        margin-top: 0%;
+        margin-left:68%;
+    }
+    .university .building{
+        position: relative;
+        width:70vh;
+
+       margin-top: -220%;
+        margin-left:50%;
+    }
+    .university .list2{
+        font-size: 1rem;
+        position: relative;
+        min-width: 50%;
+        margin-left: 47%;
+        margin-top: 2%;
+    }
+}
+
+/*Mobile Layout*/
+@media only screen and (max-width:700px) {
+
+    .changer{
+        display: none;
+    }
+    body {
+        background-color: #FA7070 !important;
+
+    }
+
+    #logo {
+
+        height: 100px !important;
+        width: 100px !important;
+    }
+
+    .introduction {
+        display: flex !important;
+        position: relative !important;
+
+        height: 60vh !important;
+    }
+
+    #navtext a {
+        font-size: 1.3rem;
+    }
+
+
+    .top {
+        background-color: rgb(133, 0, 0) !important;
+    }
+
+    #navbar {
+        background-color: indianred !important;
+    }
+    .highschool h1{
+        margin-bottom: 150%;
+        position: relative;
+        width: 200% !important;
+        font-size: 2rem;
+        margin-right: -60%;
+    }
+    .highschool .west{
+        margin-bottom: 20%;
+        position: relative;
+        height: 50vh;
+        width: 50vh;
+        margin-right: 56%;
+    }
+    .highschool .tableHS{
+        margin-right: 60%;
+        position:absolute;
+        margin-top:90%;
+    }
+
+    .university h1{
+        position:relative;
+        margin-right: 8%;
+        margin-top:20%;
+        font-size: 2rem;
+
+    }
+
+    .university .building{
+        height:50vh;
+        width:50vh;
+        position: relative;
+        margin-top: 5%;
+        margin-left: 20%;
+    }
+    .university h1{
+        position: relative;
+        margin-left: 20%;
+    }
+    .university h3{
+        font-size: 1.9rem;
+        margin-top:5%;
+        margin-left: 38%;
+    }
+    .university .list2{
+        position: relative;
+        margin-top: 14%;
+        max-width: 10%;
+        margin-left: 30%;
+        min-width: 10%;
+    }
+    .list2 h2{
+        margin-right: 30%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .list2 li{
+        text-align: center;
+        min-width: 500%;
+        font-size: 1.6rem;
+    }
+}
